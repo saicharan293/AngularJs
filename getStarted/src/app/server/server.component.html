@@ -1,0 +1,11 @@
+<!-- <h3>this is server component for the application</h3> -->
+<!-- <h2>Access permission: {{ getApproval()}}</h2> -->
+<h2
+  [ngStyle]="{ backgroundColor: getColor() }"
+  [ngClass]="{
+    online: serverStatus === 'online',
+    offline: serverStatus === 'offline'
+  }"
+>
+  {{ "server" }} with id : {{ serverId }} is {{ serverStatus }}
+</h2>

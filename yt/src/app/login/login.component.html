@@ -1,0 +1,22 @@
+<div class="grid classCenter">
+<p-card header="Title" [style]="{'width':'24rem','margin-bottom':'2em'}">
+  <div class="grid">
+    <div class="col-12">
+      <label for="email"></label>
+      <input type="text" pInputText formControlName="text" />
+    </div>
+    <div class="col-12">
+      <label for="password"></label>
+      <input type="password" pInputText formControlName="text" />
+    </div>
+    <p-button label="Submit"></p-button>
+  </div>
+  <div class="grid">
+    <div class="col-6">Not a member <a href="/register">Register</a></div>
+    <div class="col-6">
+      <a href="/forgot">Forgot password</a>
+    </div>
+  </div>
+</p-card>
+</div>
+<router-outlet></router-outlet>
